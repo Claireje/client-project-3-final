@@ -1,0 +1,324 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gaegu&family=Oxanium:wght@200..800&display=swap');
+
+/* Basic Styling */
+body {
+    /* Sets the font family, line height, margin, padding, and background color for the entire page */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+/* Link Styling */
+a {
+    /* Styles all links on the page */
+    font-family: "Oxanium", sans-serif;
+    text-decoration: none;
+    color: #3a853c; 
+}
+
+/* Specific Link Styling for #main anchor */
+a[href="#main"] {
+    /* Styles the anchor tag that links to the "main" section */
+    display: inline-block;
+    background: #ffffff; 
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    font-weight: bold;
+}
+
+/* Hover and Focus Styles for #main Anchor */
+a[href="#main"]:hover,
+a[href="#main"]:focus {
+    background: #f0f0f0; 
+}
+
+/* Navigation Styling */
+nav {
+    /* Styles the navigation bar */
+    background-color: #333;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+/* Unordered List Styling for Navigation */
+nav ul {
+    /* Styles the unordered list within the navigation bar */
+    list-style-type: none;
+    text-align: center;
+}
+
+/* List Item Styling for Navigation */
+nav ul li {
+    /* Styles each list item within the navigation */
+    display: inline-block; 
+    margin-right: 15px;
+}
+
+/* Link Styling within Navigation */
+nav ul li a {
+    /* Styles the links within the navigation list items */
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px; 
+    border-radius: 10px;
+    background-color: #2e3f1f;
+    display: flex;
+    margin-bottom: 10px;
+    border-color: #747474;
+    border-style: solid;
+}
+
+/* Hover Styling for Navigation Links */
+nav ul li a:hover{
+    /* Styles the navigation links when hovered */
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px; 
+    border-style: solid;
+    border-color:#ffe064;
+    border-radius: 10px;
+    background-color: #455e2d;
+}
+
+/* Header Styling */
+header {
+    /* Styles the header section */
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-image: 
+        linear-gradient(#347936, rgba(43, 70, 12, 0.5)),
+        url("../images/profiles/18820257.jpg");
+}
+
+/* Footer Link Styling */
+footer a{
+    /* Styles the links within the footer */
+    color: #333;
+}
+
+/* Heading 1 Styling */
+header h1 {
+    /* Styles the primary heading within the header */
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* Link Styling within Heading 1 */
+header h1 a {
+    /* Styles links within the primary heading */
+    color: #f1c40f; 
+}
+
+/* Hover Styling for Links within Heading 1 */
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+/* Heading 2 Styling */
+header h2 {
+    /* Styles the secondary heading within the header */
+    font-size: 20px;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+/* Main Content Styling */
+main {
+    /* Styles the main content area */
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+    /* Styles sections within the main content area */
+    margin-bottom: 30px;
+}
+
+/* Heading 2 Styling for Sections */
+h2 {
+    /* Styles the heading for each section */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Summary Paragraph Styling */
+.summary p {
+    /* Styles the paragraph within the summary section */
+    font-size: 18px;
+    color: #555;
+}
+
+/* Table Styling */
+table {
+    /* Styles tables within the content */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Table Header and Cell Styling */
+th, td {
+    /* Styles table headers and cells */
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Header Styling */
+th {
+    /* Styles table headers specifically */
+    background-color: #3a853c; 
+    color: white;
+}
+
+/* Athlete Profile Styling */
+.athlete {
+    /* Styles containers for athlete information */
+    margin-bottom: 20px;
+}
+
+/* Athlete Figure Styling */
+.athlete figure {
+    /* Styles figures within athlete containers */
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Athlete Image Styling */
+.athlete img {
+    /* Styles athlete images */
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+/* Gallery Styling */
+#gallery {
+    /* Styles the gallery section */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Athlete Styling within Gallery */
+#gallery .athlete {
+    /* Styles athlete containers within the gallery */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+/* Hover Styling for Gallery Athletes */
+#gallery .athlete:hover {
+    /* Styles gallery athletes on hover */
+    transform: scale(1.05); 
+}
+
+/* Image Styling within Gallery */
+#gallery img {
+    /* Styles images within the gallery */
+    width: 95%;
+    border-radius: 8px;
+    margin: 0 auto;
+    transition: width 0.3s; 
+}
+
+/* Hover Styling for Gallery Images */
+#gallery img:hover {
+    /* Styles gallery images on hover */
+    width: 100%;
+}
+
+/* Individual Results Styling */
+#individual-results .athlete {
+    /* Styles athlete containers within the "individual-results" section */
+    background-color: white;
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#4CAF50;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Athlete Figure Caption Styling */
+.athlete figcaption{
+    /* Styles the caption within athlete figures */
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/* Athlete Image Styling (Redefined for Individual Results) */
+.athlete img {
+    /* Styles athlete images within the "individual-results" section */
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    width: 130px; 
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Athlete Heading 3 Styling */
+.athlete h3 {
+    /* Styles heading 3 within athlete containers */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    
+}
+
+/* Athlete Definition List Styling */
+.athlete dl {
+    /* Styles definition lists within athlete containers */
+    margin: 0;
+}
+
+/* Athlete Definition Term Styling */
+.athlete dt {
+    /* Styles definition terms within athlete definition lists */
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Athlete Definition Description Styling */
+.athlete dd {
+    /* Styles definition descriptions within athlete definition lists */
+    margin: 0;
+    color: #666;
+}
+
+/* Image Styling */
+img {
+    /* General image styling */
+    width: 200px; 
+    height: auto; 
+  }
+  
+/* Placeholder Image Styling */
+img[src='../images/placeholder.png'] {
+    /* Styles placeholder images */
+    background-color: #ccc; 
+    display: block; 
+    text-align: center; 
+    color: #666; 
+    line-height: 200px; 
+  }

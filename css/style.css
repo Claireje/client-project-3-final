@@ -1,0 +1,145 @@
+/* Imported Oxanium font */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gaegu&family=Oxanium:wght@200..800&display=swap');
+
+/* General styles */
+body {
+    font-family: "Oxanium", sans-serif; /* Main font */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+a { /* Style for all links */
+    text-decoration: none; /* Remove underlines */
+    color: #007BFF; /* Blue link color */
+}
+
+a:hover { /* Style for links on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+a:focus { /* Style for links on focus */
+    color: #0056b3; /* Same darker blue on focus */
+}
+
+/* Header styles */
+.main-header { /* Main header section */
+    background-color: #347936; /* Dark green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Centered text */
+}
+
+.main-header h1 { /* Main heading in header */
+    margin: 0; /* Remove default margins */
+    font-size: 2.5em; /* Large heading size */
+}
+
+.main-header p { /* Paragraph in header */
+    margin-top: 10px; /* Top margin */
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Navigation styles */
+.main_nav { /* Main navigation */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Vertical stacking */
+    align-items: center; /* Centered items horizontally */
+    background-color: #333; /* Dark gray background */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Faded overlay */
+        url("../images/profiles/18820257.jpg"); /* Background image */
+    background-position: top; /* Image at the top */
+    background-size: cover; /* Image covers background */
+    background-attachment: fixed; /* Image fixed to viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    padding: 10px; /* Padding around navigation */
+    font-weight: bold; /* Bold text */
+}
+
+.main_nav a { /* Links in navigation */
+    padding: 20px 20px; /* Padding around links */
+    margin: 5px; /* Margin between links */
+    color: #333; /* Dark gray text */
+    background-color: #ffffff; /* White background */
+    border: 5px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    width: 85%; /* 85% width */
+    text-align: center; /* Centered text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    font-size:x-large; /* Large font size */
+}
+
+.main_nav p{ /* Paragraphs in navigation */
+    color: #606060; /* Light gray text */
+    font-size:medium; /* Medium font size */
+}
+
+.main_nav p1{ /* Specific paragraph in navigation */
+    color: #606060; /* Light gray text */
+    font-size:large; /* Large font size */
+}
+
+.main_nav a:hover { /* Links on hover */
+    background-color: #c1c1c1; /* Lighter gray background */
+    color: #000000; /* Black text */
+}
+
+.main_nav a:focus { /* Links on focus */
+    background-color: #ddd; /* Even lighter gray background */
+}
+
+/* Upcoming meets section styles */
+.upcoming-meets { /* Upcoming meets section */
+    margin: 20px auto; /* Centered with margin */
+    padding: 20px; /* Padding around content */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.upcoming-meets h2 { /* Heading in meets section */
+    font-size: 2em; /* Large heading size */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Centered heading */
+    margin-bottom: 15px; /* Bottom margin */
+}
+
+.upcoming-meets ul { /* Unordered list in meets section */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.upcoming-meets ul li { /* List items in meets section */
+    background-color: #e0f7fa; /* Light blue background */
+    border: 1px solid #00796b; /* Dark teal border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding around list items */
+    margin: 10px 0; /* Margin around list items */
+    font-size: 1.2em; /* Larger font size */
+    position: relative; /* Allow positioning */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.upcoming-meets ul li:hover { /* List items on hover */
+    transform: scale(1.05); /* Scale up slightly */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+@keyframes fadeIn { /* Fade-in animation */
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+.main-footer { /* Main footer */
+    background-color: #347936; /* Dark green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around footer */
+    text-align: center; /* Centered text */
+}

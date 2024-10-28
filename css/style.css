@@ -16,7 +16,7 @@
     --nav-link-focus-background-color: #ddd; /* Light gray */
     --footer-background-color: #347936; /* Dark green */
     --button-background: #ffffff; /* White button background */
-    --button-hover: rgba(210, 210, 210, 0.874); /* Light overlay on hover */
+    --button-hover: rgba(210, 210, 210, 0.874); /* Light hover */
 }
 
 /* General */
@@ -24,30 +24,30 @@ body {
     font-family: "Oxanium", sans-serif; /* Main font */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
-    background-color: var(--background-color); /* Use CSS variable for background */
-    color: var(--text-color); /* Use CSS variable for text color */
+    background-color: var(--background-color); 
+    color: var(--text-color); 
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 /* Header */
 .main-header { /* Main header section */
-    background-color: var(--primary-color); /* Use CSS variable for background */
-    color: white; /* White text */
+    background-color: var(--primary-color); 
+    color: white; 
     padding: 20px 0; /* Padding around content */
-    text-align: center; /* Centered text */
+    text-align: center; 
     transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color changes */
 }
 
 .main-header h1 { 
-    margin: 0; /* Remove default margins */
-    font-size: 2.5em; /* Large heading size */
-    transition: color 0.3s ease; /* Add transition for smooth color changes */
+    margin: 0; 
+    font-size: 2.5em; 
+    transition: color 0.3s ease; /* Add transition */
 }
 
 .main-header p { 
     margin-top: 10px; /* Top margin */
     font-size: 1.2em; /* Larger font size */
-    transition: color 0.3s ease; /* Add transition for smooth color changes */
+    transition: color 0.3s ease; 
 }
 
 /* Navigation */
@@ -55,59 +55,59 @@ body {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Vertical stacking */
     align-items: center; /* Centered items horizontally */
-    background-color: var(--nav-background-color); /* Use CSS variable for background */
+    background-color: var(--nav-background-color); 
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Faded overlay */
         url("../images/profiles/18820257.jpg"); /* Background image */
     background-position: top; /* Image at the top */
     background-size: cover; /* Image covers background */
-    background-attachment: fixed; /* Image fixed to viewport */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    padding: 10px; /* Padding around navigation */
+    background-attachment: fixed; /* Image fixed */
+    background-repeat: no-repeat; 
+    padding: 10px; 
     font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color changes */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main_nav a { 
     padding: 20px 20px; /* Padding around links */
     margin: 5px; /* Margin between links */
-    color: var(--nav-link-color); /* Use CSS variable for link color */
-    background-color: var(--nav-link-background-color); /* Use CSS variable for link background */
+    color: var(--nav-link-color); 
+    background-color: var(--nav-link-background-color); 
     border: 5px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
     width: 85%; /* 85% width */
     text-align: center; /* Centered text */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    font-size: Large; /* Large font size */
+    font-size: Large; 
     display: block; /* Makes the link take up full width */
-    text-decoration: none; /* Remove default link underlines */
+    text-decoration: none; /* Remove default */
 }
 
 .main_nav p { /* Paragraphs in navigation */
-    color: #606060; /* Light gray text */
-    font-size: Large; /* Medium font size */
+    color: #606060; 
+    font-size: Large; 
 }
 
 .main_nav p1 { /* Specific paragraph in navigation */
-    color: #606060; /* Light gray text */
-    font-size: large; /* Large font size */
+    color: #606060; 
+    font-size: large; 
 }
 
 .main_nav a:hover { /* hover */
-    background-color: var(--nav-link-hover-background-color); /* Use CSS variable for hover background */
-    color: var(--nav-link-hover-color); /* Use CSS variable for hover color */
+    background-color: var(--nav-link-hover-background-color); 
+    color: var(--nav-link-hover-color); 
 }
 
 .main_nav a:focus { /* focus */
-    background-color: var(--nav-link-focus-background-color); /* Use CSS variable for focus background */
+    background-color: var(--nav-link-focus-background-color); 
 }
 
 /* Main footer */
 .main-footer { /* Main footer */
-    background-color: var(--footer-background-color); /* Use CSS variable for footer background */
-    color: white; /* White text */
-    padding: 20px; /* Padding around footer */
-    text-align: center; /* Centered text */
+    background-color: var(--footer-background-color); 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
     transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color changes */
 }
 
@@ -154,7 +154,7 @@ body {
     --nav-paragraph-color: #eee; /*  Set the color for navigation paragraphs */
 }
 
-/* Dark mode for paragraphs */
+/* Dark mode */
 .main_nav p.dark-mode { 
     color: var(--nav-paragraph-color); 
 }
@@ -164,11 +164,11 @@ body {
 
 
 .main-header h1.dark-mode {
-    color: #eee; /* Light gray text */
+    color: #eee; 
 }
 
 .main-header p.dark-mode {
-    color: #eee; /* Light gray text */
+    color: #eee; 
 }
 /* Dark mode overrides for paragraphs */
 .main_nav p.dark-mode { 
@@ -179,20 +179,20 @@ body {
 }
 
 .main_nav.dark-mode {
-    background-color: #333; /* Dark gray background */
+    background-color: #333; /* Dark gray bg */
 }
 
 .main_nav a.dark-mode {
     color: #eee; /* Light gray text */
-    background-color: #222; /* Dark gray background */
+    background-color: #222; /* Dark gray bg */
 }
 
 .main_nav p.dark-mode {
-    color: #eee; /* Light gray text */
+    color: #eee; /* Light gray */
 }
 
 .main-footer.dark-mode {
-    background-color: #282c34; /* Darker green background */
+    background-color: #282c34; /* Darker green bg */
 }
 
 

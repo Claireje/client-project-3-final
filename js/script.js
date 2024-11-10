@@ -35,4 +35,27 @@ document.getElementById('dark-mode').addEventListener('keydown', function(event)
       // Code to toggle dark mode
   }
 });
+
+// Set the path to the default image
+const defaultImagePath = '../default_image.jpg';
+
+// Function to set up error handling for images
+function addDefaultImageFallback() {
+    // Select all images on the page
+    const images = document.querySelectorAll("img");
+
+    // Add the onerror event to each image
+    images.forEach(img => {
+        img.onerror = function() {
+            // Remove error handler to prevent infinite loops
+            this.onerror = null;
+            // Set the source to the default image path
+            this.src = defaultImagePath;
+        };
+    });
+}
+
+// Run the function after the DOM has loaded
+document.addEventListener("DOMContentLoaded", addDefaultImageFallback);
+
 handleImageErrors(); 

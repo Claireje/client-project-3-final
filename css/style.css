@@ -39,12 +39,14 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color changes */
 }
 
+/* Header 1 */
 .main-header h1 { 
     margin: 0; 
     font-size: 2.5em; 
     transition: color 0.3s ease; /* Add transition */
 }
 
+/* Header p */
 .main-header p { 
     margin-top: 10px; /* Top margin */
     font-size: 1.2em; /* Larger font size */
@@ -69,6 +71,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* nav 1 */
 .main_nav a { 
     padding: 20px 20px; /* Padding around links */
     margin: 5px; /* Margin between links */

@@ -10,7 +10,8 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Light Mode Background */
     color: #333; /* Light Mode Text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color changes */
+    /* Add transition for smooth color changes */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* Link Styling */
@@ -208,6 +209,7 @@ th {
     object-fit: cover;
     flex-shrink: 0; /* Prevents image from resizing */
 }
+
 /* Gallery Styling */
 #gallery {
     /* Styles the gallery section */
@@ -320,16 +322,6 @@ img {
     width: 200px; 
     height: auto; 
   }
-  
-/* Placeholder Image Styling */
-img[src='../images/placeholder.png'] {
-    /* Styles placeholder images */
-    background-color: #ccc; 
-    display: block; 
-    text-align: center; 
-    color: #666; 
-    line-height: 200px; 
-  }
 
 /* Laptop and Larger Screen Styles */
 @media (min-width: 768px) { 
@@ -427,9 +419,10 @@ img[src='../images/placeholder.png'] {
     }
 }
 
-button#dark-mode {  /* More specific selector */
+/* Styling for button for dark mode */
+button#dark-mode {  
     display: block;
-    text-align: center;  /* Not needed if button text is already centered */
+    text-align: center;  
     margin: 0 auto; /* Center horizontally */
     border: none;
     padding: 10px 20px;
@@ -438,8 +431,10 @@ button#dark-mode {  /* More specific selector */
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: fit-content; /* Or a fixed width if you prefer */
+    width: fit-content; 
 }
+
+/* Styling for button when dark mode */
 body.dark-mode button#dark-mode {
     color: white;
     background-color: #333;
@@ -447,13 +442,14 @@ body.dark-mode button#dark-mode {
     border-width: 2px;
 }
 
+/* When hovering over the button the background color changes */
 button#dark-mode:hover {
     background-color: var(--button-hover);
 }
 
-/* Dark Mode Styles */
+/* Dark Mode Styles for the entire page */
 body.dark-mode {
-    background-color: #222;  /* Use these values directly or via variables as shown below */
+    background-color: #222;  
     color: #eee;
     --link-color: #eee;
     --link-hover-color: #ddd;
@@ -470,21 +466,24 @@ body.dark-mode {
     --nav-paragraph-color: #eee;
 }
 
+/* Link color in dark mode */
 body.dark-mode a {
-    color: #eee; /* Link color in dark mode */
+    color: #eee; 
 }
 
+/* Darker border in dark mode */
 body.dark-mode a[href="#main"] {
     background-color: #333;
-    border-color: #555; /* Darker border in dark mode */
+    border-color: #555; 
 }
+
+/* When hover in the dark mode, the body chanegs to #444 */
 body.dark-mode a[href="#main"]:hover,
 body.dark-mode a[href="#main"]:focus {
     background-color: #444;
 }
 
-
-
+/* background color changes to #333 when dark mode */
 body.dark-mode nav {
     background-color: #333;
 }
@@ -500,18 +499,18 @@ body.dark-mode nav ul li a:hover{
   border-color: #ffe064;
 }
 
-
+/* background for the header background images when dark mode */
 body.dark-mode header {
-    background-image: linear-gradient(#282c34, rgba(43, 70, 12, 0.8)), url("../images/profiles/18820257.jpg");
+    background-image: linear-gradient(#282c34, rgba(43, 70, 12, 0.8)), 
+    url("../images/profiles/18820257.jpg");
 }
 
-
-
+/* color of the footer when dark mode */
 body.dark-mode footer a {
     color: #eee;
 }
 
-
+/* same but with the header */
 body.dark-mode header h1 {
     color: #eee;
 }
@@ -577,6 +576,8 @@ body.dark-mode .athlete dd {
     color: #bbb;
 }
 
+/* Reduce motion for all of the animation in the website when the user 
+toggles the reudce motion in their system settings */
 @media (prefers-reduced-motion: reduce) {
     body {
         transition: none; 

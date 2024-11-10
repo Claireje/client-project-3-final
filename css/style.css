@@ -62,7 +62,7 @@ body {
         url("../images/profiles/18820257.jpg"); /* Background image */
     background-position: top; /* Image at the top */
     background-size: cover; /* Image covers background */
-    background-attachment: fixed; /* Image fixed */
+    background-attachment: fixed; 
     background-repeat: no-repeat; 
     padding: 10px; 
     font-weight: bold; /* Bold text */
@@ -84,27 +84,31 @@ body {
     text-decoration: none; /* Remove default */
 }
 
-.main_nav p { /* Paragraphs in navigation */
+/* Paragraphs in navigation */
+.main_nav p { 
     color: #606060; 
     font-size: Large; 
 }
 
-.main_nav p1 { /* Specific paragraph in navigation */
+/* Specific paragraph in navigation */
+.main_nav p1 { 
     color: #606060; 
     font-size: large; 
 }
 
-.main_nav a:hover { /* hover */
+/* hover */
+.main_nav a:hover { 
     background-color: var(--nav-link-hover-background-color); 
     color: var(--nav-link-hover-color); 
 }
 
-.main_nav a:focus { /* focus */
+/* focus */
+.main_nav a:focus { 
     background-color: var(--nav-link-focus-background-color); 
 }
 
 /* Main footer */
-.main-footer { /* Main footer */
+.main-footer { 
     background-color: var(--footer-background-color); 
     color: white; 
     padding: 20px; 
@@ -119,6 +123,7 @@ body {
     margin-top: 10px;
 }
 
+/* Header Button Container button */
 .main-header .button-container button {
     background-color: #ffffff;
     border: none;
@@ -131,6 +136,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Header Button Container button hover*/
 .main-header .button-container button:hover {
     background-color: var(--button-hover);
 }
@@ -179,8 +185,9 @@ body {
     color: var(--nav-paragraph-color); 
 }
 
+/* Dark gray bg */
 .main_nav.dark-mode {
-    background-color: #333; /* Dark gray bg */
+    background-color: #333; 
 }
 
 .main_nav a.dark-mode {
@@ -192,18 +199,20 @@ body {
     color: #eee; /* Light gray */
 }
 
+/* Darker green bg */
 .main-footer.dark-mode {
-    background-color: #282c34; /* Darker green bg */
+    background-color: #282c34; 
 }
 
+/* Disable body transition */
 @media (prefers-reduced-motion: reduce) {  
-    body { transition: none; }  /* Disable body transition */
+    body { transition: none; }  
   
-    .main_nav a, .main-header, .main-footer, /* etc... */
+    .main_nav a, .main-header, .main-footer,
     .main-header h1, .main-header p, .main-header .button-container button{
       transition: none; /* Disable all other transitions */
     }
   
-  }
+}
 
 

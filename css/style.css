@@ -1,32 +1,33 @@
 /* Imported Oxanium font */
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gaegu&family=Oxanium:wght@200..800&display=swap');
 
-/* CSS variables for light mode */
+
+/* light mode */
 :root {
-    --primary-color: #347936; /* Dark green */
-    --background-color: #f9f9f9; /* Light gray */
-    --text-color: #333; /* Dark gray */
-    --link-color: #007BFF; /* Blue */
-    --link-hover-color: #0056b3; /* Darker blue */
-    --nav-background-color: #333; /* Dark gray */
-    --nav-link-color: #333; /* Dark gray */
-    --nav-link-hover-color: #000000; /* Black */
-    --nav-link-background-color: #ffffff; /* White */
-    --nav-link-hover-background-color: #c1c1c1; /* Lighter gray */
-    --nav-link-focus-background-color: #ddd; /* Light gray */
-    --footer-background-color: #347936; /* Dark green */
-    --button-background: #ffffff; /* White button background */
-    --button-hover: rgba(210, 210, 210, 0.874); /* Light hover */
+    --primary-color: #347936;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --link-color: #007BFF;
+    --link-hover-color: #0056b3;
+    --nav-background-color: #333;
+    --nav-link-color: #333;
+    --nav-link-hover-color: #000000;
+    --nav-link-background-color: #ffffff;
+    --nav-link-hover-background-color: #c1c1c1;
+    --nav-link-focus-background-color: #ddd;
+    --footer-background-color: #347936;
+    --button-background: #ffffff;
+    --button-hover: rgba(210, 210, 210, 0.874);
 }
 
 /* General */
 body {
     font-family: "Oxanium", sans-serif; /* Main font */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
     background-color: var(--background-color); 
     color: var(--text-color); 
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* Header */
@@ -52,7 +53,7 @@ body {
 
 /* Navigation */
 .main_nav { 
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
     flex-direction: column; /* Vertical stacking */
     align-items: center; /* Centered items horizontally */
     background-color: var(--nav-background-color); 
@@ -136,22 +137,22 @@ body {
 
 /* Dark Mode */
 .dark-mode {
-    --primary-color: #282c34; /* Darker green */
-    --background-color: #222; /* Dark gray background */
-    --text-color: #eee; /* Light gray text */
-    --link-color: #eee; /* Light gray */
-    --link-hover-color: #ddd; /* Lighter gray */
-    --nav-background-color: #333; /* Dark gray */
-    --nav-link-color: #eee; /* Light gray */
-    --nav-link-hover-color: #ddd; /* Lighter gray */
-    --nav-link-background-color: #222; /* Dark gray */
-    --nav-link-hover-background-color: #333; /* Darker gray */
-    --nav-link-focus-background-color: #444; /* Even darker gray */
-    --footer-background-color: #282c34; /* Darker green */
-    --button-background: #333; /* Dark gray button background */
-    --button-hover: #444; /* Darker gray button hover */
-    --main-content-background: #222; /* Dark gray background for content */
-    --nav-paragraph-color: #eee; /*  Set the color for navigation paragraphs */
+    --primary-color: #282c34;
+    --background-color: #222;
+    --text-color: #eee;
+    --link-color: #eee;
+    --link-hover-color: #ddd;
+    --nav-background-color: #333;
+    --nav-link-color: #eee;
+    --nav-link-hover-color: #ddd;
+    --nav-link-background-color: #222;
+    --nav-link-hover-background-color: #333;
+    --nav-link-focus-background-color: #444;
+    --footer-background-color: #282c34;
+    --button-background: #333;
+    --button-hover: #444;
+    --main-content-background: #222;
+    --nav-paragraph-color: #eee;
 }
 
 /* Dark mode */
@@ -195,5 +196,14 @@ body {
     background-color: #282c34; /* Darker green bg */
 }
 
+@media (prefers-reduced-motion: reduce) {  
+    body { transition: none; }  /* Disable body transition */
+  
+    .main_nav a, .main-header, .main-footer, /* etc... */
+    .main-header h1, .main-header p, .main-header .button-container button{
+      transition: none; /* Disable all other transitions */
+    }
+  
+  }
 
 

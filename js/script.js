@@ -20,16 +20,6 @@ if (darkModeToggle) {
   darkModeToggle.addEventListener('click', toggleDarkMode);
 }
 
-// Image error handling 
-function handleImageErrors() {
-  document.querySelectorAll('img').forEach(img => {
-      img.onerror = function() {
-          this.onerror = null;
-          this.src = '../images/placeholder.png'; 
-          this.alt = 'Image not available';
-      };
-  });
-}
 document.getElementById('dark-mode').addEventListener('keydown', function(event) {
   if (event.key === 'Enter' || event.key === ' ') {
       // Code to toggle dark mode

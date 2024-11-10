@@ -189,23 +189,25 @@ th {
 .athlete {
     /* Styles containers for athlete information */
     margin-bottom: 20px;
+    
 }
 
 /* Athlete Figure Styling */
 .athlete figure {
-    /* Styles figures within athlete containers */
-    display:flex;
+    display: flex;
     align-items: center;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 /* Athlete Image Styling */
 .athlete img {
-    /* Styles athlete images */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 2px solid #ddd; /* Light Mode Border */
+    object-fit: cover;
+    flex-shrink: 0; /* Prevents image from resizing */
 }
-
 /* Gallery Styling */
 #gallery {
     /* Styles the gallery section */
@@ -260,18 +262,21 @@ th {
     margin-bottom: 20px;
     padding-bottom: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
-/* Athlete Figure Caption Styling */
-.athlete figcaption{
-    /* Styles the caption within athlete figures */
+/* Athlete Caption Styling */
+.athlete figcaption {
+    transition: font-size 0.2s ease;
     font-weight: bolder;
     font-size: x-large;
+    flex: 1; /* Allows text to take remaining space without affecting image */
+    overflow-wrap: break-word; 
+    
 }
 
 /* Athlete Image Styling (Redefined for Individual Results) */
 .athlete img {
-    /* Styles athlete images within the "individual-results" section */
     border-radius: 50%;
     border: 3px solid #ddd; /* Light Mode Border */
     width: 130px; 
@@ -287,7 +292,6 @@ th {
     font-weight: bold;
     margin-bottom: 10px;
     color: #333; /* Light Mode Text */
-    
 }
 
 /* Athlete Definition List Styling */
@@ -329,6 +333,15 @@ img[src='../images/placeholder.png'] {
 
 /* Laptop and Larger Screen Styles */
 @media (min-width: 768px) { 
+    .athlete img {
+        /* Styles athlete images */
+        width: 100px; /* Set a fixed width */
+        height: 100px; /* Set a fixed height */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover; /* Ensures the image fits within the circle without stretching */
+        overflow: hidden; /* Ensures no part of the image goes beyond the circle */
+    }
+
     .athlete figcaption{
         font-weight: bolder;
         font-size: larger;
@@ -373,6 +386,14 @@ img[src='../images/placeholder.png'] {
 
 /* Styles for Laptop and Larger Screens */
 @media (min-width: 1024px) { 
+    .athlete img {
+        /* Styles athlete images */
+        width: 100px; /* Set a fixed width */
+        height: 100px; /* Set a fixed height */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover; /* Ensures the image fits within the circle without stretching */
+        overflow: hidden; /* Ensures no part of the image goes beyond the circle */
+    }
     .athlete figcaption{
         font-weight: bolder;
         font-size: large;
